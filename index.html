@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Xerox One Invoice Delivery</title>
+</head>
+
+<body class="Font">
+    <div class="container">
+        <div class="row  ">
+            <div class="col-5 text-center m-auto my-5 rounded-3 shadow bg">
+                <h1 class="Font my-3 colorP">أوردر ديليفري</h1>
+                <button class="btn btn-danger" id="clearButton">حذف البيانات الحالية</button>
+                <form id="myForm">
+                    <div class="form-group mt-2">
+                        <input dir="rtl" type="text" class="form-control" id="name" name="name"
+                            placeholder="اسم العميل:">
+                    </div>
+                    <div class="form-group mt-2">
+                        <input dir="rtl" type="text" class="form-control" id="mobile" name="mobile"
+                            placeholder="رقم الموبايل:">
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <textarea type="text" class="form-control" id="address" name="address" rows="4"
+                            placeholder="العنوان:" dir="rtl"></textarea>
+                    </div>
+                    <div class="form-group mt-2">
+                        <input dir="rtl" type="number" class="form-control" id="deliveryCost" name="deliveryCost"
+                            placeholder="تكلفة التوصيل:">
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+
+                        <div class="my-3 rounded bg-white p-2">
+                            <label class=" mx-3 fw-bold text-danger" dir="rtl">الصنف 1:</label>
+                            <div class="form-group d-flex align-items-center mt-2">
+                                <input dir="rtl" type="text" class="form-control " id="info1" name="info1"
+                                    placeholder="البيــــان:">
+                            </div>
+                            <div class="form-group d-flex align-items-center mt-2">
+                                <input dir="rtl" type="number" class="form-control" id="cost1" name="cost1"
+                                    placeholder="التكلفة:">
+                            </div>
+
+                        </div>
+
+
+                        <div class="my-3 rounded bg-white p-2">
+                            <label class=" mx-3 fw-bold text-danger" dir="rtl">الصنف 2:</label>
+                            <div class="form-group d-flex align-items-center mt-2">
+                                <input dir="rtl" type="text" class="form-control " id="info2" name="info2"
+                                    placeholder="البيــــان:">
+                            </div>
+                            <div class="form-group d-flex align-items-center mt-2">
+                                <input dir="rtl" type="number" class="form-control" id="cost2" name="cost2"
+                                    placeholder="التكلفة:">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+
+                    <div class="my-3 rounded bg-white p-2">
+                        <label class=" mx-3 fw-bold text-danger" dir="rtl">الصنف 3:</label>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="text" class="form-control " id="info3" name="info3"
+                                placeholder="البيــــان:">
+                        </div>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="number" class="form-control" id="cost3" name="cost3"
+                                placeholder="التكلفة:">
+                        </div>
+
+                    </div>
+
+                    <div class="my-3 rounded bg-white p-2">
+                        <label class=" mx-3 fw-bold text-danger" dir="rtl">الصنف 4:</label>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="text" class="form-control " id="info4" name="info4"
+                                placeholder="البيــــان:">
+                        </div>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="number" class="form-control" id="cost4" name="cost4"
+                                placeholder="التكلفة:">
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+
+                    <div class="my-3 rounded bg-white p-2">
+                        <label class=" mx-3 fw-bold text-danger" dir="rtl">الصنف 5:</label>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="text" class="form-control " id="info5" name="info5"
+                                placeholder="البيــــان:">
+                        </div>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="number" class="form-control" id="cost5" name="cost5"
+                                placeholder="التكلفة:">
+                        </div>
+
+                    </div>
+
+                    <div class="my-3 rounded bg-white p-2">
+                        <label class=" mx-3 fw-bold text-danger" dir="rtl">الصنف 6:</label>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="text" class="form-control " id="info6" name="info6"
+                                placeholder="البيــــان:">
+                        </div>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="number" class="form-control" id="cost6" name="cost6"
+                                placeholder="التكلفة:">
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+
+                    <div class="my-3 rounded bg-white p-2">
+                        <label class=" mx-3 fw-bold text-danger" dir="rtl">الصنف 7:</label>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="text" class="form-control " id="info7" name="info7"
+                                placeholder="البيــــان:">
+                        </div>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="number" class="form-control" id="cost7" name="cost7"
+                                placeholder="التكلفة:">
+                        </div>
+
+                    </div>
+
+                    <div class="my-3 rounded bg-white p-2">
+                        <label class=" mx-3 fw-bold text-danger" dir="rtl">الصنف 8:</label>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="text" class="form-control " id="info8" name="info8"
+                                placeholder="البيــــان:">
+                        </div>
+                        <div class="form-group d-flex align-items-center mt-2">
+                            <input dir="rtl" type="number" class="form-control" id="cost8" name="cost8"
+                                placeholder="التكلفة:">
+                        </div>
+
+                    </div>
+                    </div>
+                    <button type="submit" value="submit" class="btn btn-danger my-3">إدخال فاتورة</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="JS/main.js"></script>
+
+</body>
+
+</html>
