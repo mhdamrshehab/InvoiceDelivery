@@ -50,7 +50,7 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
 
 
     // Redirect to a thank-you page or another page to display the data
-    window.location.href = "E:/Amr Shehab/InvoiceDelivery/html/Invoice.html";
+    window.location.href = "Invoice.html";
 });
 document.getElementById('clearButton').addEventListener('click', function () {
     // Clear session storage
