@@ -51,7 +51,7 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
 
     
     // Redirect to a thank-you page or another page to display the data
-    window.location.href = "https://mhdamrshehab.github.io/Invoice.html";
+    window.location.href = "https://mhdamrshehab.github.io/InvoiceDelivery/Invoice.html";
 
 
 
